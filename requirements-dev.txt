@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Local development embeddings & testing
+sentence-transformers>=3.0.0
+pytest>=8.0.0

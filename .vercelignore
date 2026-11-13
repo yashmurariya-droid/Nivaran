@@ -1,0 +1,36 @@
+# Virtual environments and dependencies
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment and sensitive secrets
+.env
+.env.*
+!.env.example
+
+# Testing and legacy files
+tests/
+tests_legacy/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data and logs
+logs/
+data/uploads/
+*.log
+
+# Design assets and archives
+*.zip
+browser_evidence/
+screenshots/
+stitch_nivaran_scholarship_portal/
+
+# Git and OS metadata
+.git/
+.gitignore
+.DS_Store
+Thumbs.db

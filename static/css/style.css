@@ -1,0 +1,162 @@
+/* =========================================================================
+   NIVARAN Design System • Approved Stitch Editorial / Khadi Paper Theme
+   Warm khadi paper, electric cobalt, marigold, vermilion, ink black
+   Syne, Space Grotesk, JetBrains Mono, Rozha One / Tiro Devanagari Hindi
+   ========================================================================= */
+
+:root {
+  --khadi: #F7F4EC;
+  --khadi-subtle: #EFECE3;
+  --khadi-dark: #E5E1D5;
+  --ink: #141414;
+  --ink-muted: #4B4842;
+  --cobalt: #1A38B8;
+  --cobalt-light: #E9EDFC;
+  --marigold: #F39C12;
+  --vermilion: #D93829;
+  --stamp-green: #166534;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F4EC;
+  color: #141414;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-image: radial-gradient(#141414 0.65px, transparent 0.65px);
+  background-size: 24px 24px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Screen View Visibility & Animation */
+.screen-view {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.screen-view.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Architectural Poster Borders */
+.grid-border-x {
+  border-left: 1.5px solid #141414;
+  border-right: 1.5px solid #141414;
+}
+
+.grid-border-b {
+  border-bottom: 1.5px solid #141414;
+}
+
+.grid-border-t {
+  border-top: 1.5px solid #141414;
+}
+
+/* Official Bureaucratic Rubber Stamp Simulation */
+.rubber-stamp {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px dashed #D93829;
+  color: #D93829;
+  transform: rotate(-2deg);
+  border-radius: 4px;
+  letter-spacing: 0.08em;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.2;
+}
+
+.rubber-stamp-cobalt {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #1A38B8;
+  color: #1A38B8;
+  transform: rotate(1deg);
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.2;
+}
+
+.rubber-stamp-green {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #166534;
+  color: #166534;
+  transform: rotate(-1deg);
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.2;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ticker Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Smooth Focus Rings */
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #1A38B8;
+  outline-offset: 2px;
+}
+
+/* Line Clamp Utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

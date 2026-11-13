@@ -1,0 +1,43 @@
+# Environments & Python artifacts
+.venv/
+env/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Data & Storage (Ensure applicant uploads and raw files remain private)
+data/raw/*
+data/uploads/*
+!data/raw/.gitkeep
+!data/uploads/.gitkeep
+
+# Include policy knowledge base and pre-indexed ChromaDB collection
+!data/knowledge_base/
+!data/chroma_db/
+
+# Logs
+logs/
+*.log
+!logs/.gitkeep
+
+# Operating System & IDE artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vercel
